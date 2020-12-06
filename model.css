@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+
+	margin:0;
+	padding:0 0 100px 0;
+	width:100%;
+	height: 100%;
+	overflow-y: scroll;
+
+	display: flex;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Poppins', sans-serif;
+
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;
+
+}
+
+.header{
+	width: 95%;
+	border-bottom:1px solid #DDD;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin:30px 0px 20px 0px;
+
+}
+
+.heading{
+	/*text-align: center;*/
+	/*margin:30px;*/
+	font-size: 24px;
+	text-decoration: none;
+	color: #000;
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.nav-link{
+	margin:5px 10px 5px 10px;
+	font-size: 15px;
+	color:#000;
+}
+
+
+.title{
+	text-align: center;
+	margin:30px;
+	font-size: 20px;
+}
+
+.spec-holder{
+
+	display: flex;
+	flex-direction: row;
+	/*margin:5px;*/
+	flex-wrap: nowrap;
+	width:80%;
+	border-bottom:1px solid #DDD;
+}
+
+
+.spec{
+	margin:20px;
+	display: flex;
+	flex-direction: column;
+	width:33.33%;
+	flex-wrap: nowrap;
+}
+
+.spec-key{
+	/*width:30%;*/
+	text-align: left;
+	margin:5px;
+	font-size: 13px;
+	/*text-decoration: underline;*/
+	color: #555;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.spec-key-text{
+	border-bottom: 1px dashed #CCC;
+}
+
+.spec-value{
+	/*max-width:40%;*/
+	margin:5px;
+	font-size: 16px;
+	
+}
+
+.center-align-children{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.building-block-img{
+	/*width:150px;*/
+	/*height: auto;*/
+
+}
+
+
+.code{
+	padding:15px;
+	background: #DDD;
+	color:#000;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 13px;
+	/*font-weight: bold;*/
+}
+
+
+@media (max-width: 800px) {
+
+	.spec-holder{
+		flex-direction: column;
+		flex-wrap: wrap;
+		width:90%;
+	}
+
+	.spec{	
+		width:90%;
+	}
+
+}
+
+.simplelink{
+	margin:0px 4px 0px 4px;
+}
+
+.vdiv{
+	width: 0;
+	border-left: 1px solid #ddd;
+}
+
+
+.noborder{
+	border:none;
+}
+
+
+.list{
+	margin:0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.list-item {
+	margin:0px 15px 0px 15px;
+}
+
+/*
+
+*{
+	border:1px solid #000;
+}
+*/
+
+
