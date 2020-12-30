@@ -10,6 +10,7 @@
 
 		  gtag('config', 'G-EF5TWDMX4D');
 		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,195 +27,204 @@
 				diff.ml
 			</a>
 			<div class="nav">
-				<a class="nav-link" href="">Contribute</a>
-				<a class="nav-link" href="">Request</a>
+				<!-- <a class="nav-link" href="">Contribute</a> -->
+				<!-- <a class="nav-link" href="">Request</a> -->
 				<a class="nav-link" href="">About</a>
 			</div>
 		</div>
 
-		<div class="title">Models</div>
+		<div class="title">Models - ImageNet Task</div>
 
-		
-		<div class="models-holder">
+		<div class="sort-holder">
+			<div class="sort-container-label">Sort by :</div>
+
+			<div class="sort-container" attachedTo="imagenet-model">
+				<div class="sortbtn activesortbtn" attachedTo="imagenet-models-acc">Acc</div>
+				<div class="sortbtn" attachedTo="imagenet-models-rfield">R.Field</div>
+				<div class="sortbtn" attachedTo="imagenet-models-params">Params</div>
+				<div class="sortbtn" attachedTo="imagenet-models-year">Year</div>
+			</div>
+		</div>
+		<div class="models-holder" id="imagenet-model-holder">
 
 			
 
-				<a href="./pages/resnet18.json.html" class="model-container">
+				<a href="./pages/resnet18.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						ResNet-18
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">69.76%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">435px</div>
+							<div class="model-field-value imagenet-models-rfield">435px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">11.6M</div>
+							<div class="model-field-value imagenet-models-params">11.6M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2016</div>
+							<div class="model-field-value imagenet-models-year">2016</div>
 						</div>
 					</div>
 				</a>
 
 			
 
-				<a href="./pages/resnet34.json.html" class="model-container">
+				<a href="./pages/resnet34.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						ResNet-34
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">75.81%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">899px</div>
+							<div class="model-field-value imagenet-models-rfield">899px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">21.7M</div>
+							<div class="model-field-value imagenet-models-params">21.7M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2016</div>
+							<div class="model-field-value imagenet-models-year">2016</div>
 						</div>
 					</div>
 				</a>
 
 			
 
-				<a href="./pages/resnet50.json.html" class="model-container">
+				<a href="./pages/resnet50.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						ResNet-50
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">77.15%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">483px</div>
+							<div class="model-field-value imagenet-models-rfield">483px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">25.5M</div>
+							<div class="model-field-value imagenet-models-params">25.5M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2016</div>
+							<div class="model-field-value imagenet-models-year">2016</div>
 						</div>
 					</div>
 				</a>
 
 			
 
-				<a href="./pages/resnet101.json.html" class="model-container">
+				<a href="./pages/resnet101.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						ResNet-101
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">80.13%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">1027px</div>
+							<div class="model-field-value imagenet-models-rfield">1027px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">44.5M</div>
+							<div class="model-field-value imagenet-models-params">44.5M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2016</div>
+							<div class="model-field-value imagenet-models-year">2016</div>
 						</div>
 					</div>
 				</a>
 
 			
 
-				<a href="./pages/resnet152.json.html" class="model-container">
+				<a href="./pages/resnet152.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						ResNet-152
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">80.62%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">1507px</div>
+							<div class="model-field-value imagenet-models-rfield">1507px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">60.1M</div>
+							<div class="model-field-value imagenet-models-params">60.1M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2016</div>
+							<div class="model-field-value imagenet-models-year">2016</div>
 						</div>
 					</div>
 				</a>
 
 			
 
-				<a href="./pages/mobilenetv2.json.html" class="model-container">
+				<a href="./pages/mobilenetv2.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						MobileNet v2
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">72.0%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">360px</div>
+							<div class="model-field-value imagenet-models-rfield">360px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">3.5M</div>
+							<div class="model-field-value imagenet-models-params">3.5M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2018</div>
+							<div class="model-field-value imagenet-models-year">2018</div>
 						</div>
 					</div>
 				</a>
 
 			
 
-				<a href="./pages/mobilenetv1.json.html" class="model-container">
+				<a href="./pages/mobilenetv1.json.html" class="model-container imagenet-model">
 					<div class="model-name">
 						MobileNet v1
 					</div>
 					<div class="model-info">
 						<div class="model-field">
-							<div class="model-field-key">Usecase</div> 
-							<div class="model-field-value">Vision</div>
+							<div class="model-field-key">Top-1 Acc</div> 
+							<div class="model-field-value imagenet-models-acc">70.60%</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">R. Field</div> 
-							<div class="model-field-value">315px</div>
+							<div class="model-field-value imagenet-models-rfield">315px</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Params</div>
-							<div class="model-field-value">4.25M</div>
+							<div class="model-field-value imagenet-models-params">4.25M</div>
 						</div>
 						<div class="model-field">
 							<div class="model-field-key">Year</div> 
-							<div class="model-field-value">2017</div>
+							<div class="model-field-value imagenet-models-year">2017</div>
 						</div>
 					</div>
 				</a>
@@ -223,7 +233,9 @@
 
 		</div>
 
+		<script src="script.js"></script>
 
+		
 	</body>
 
 

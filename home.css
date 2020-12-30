@@ -70,6 +70,7 @@ body{
 
 }
 
+
 .model-container{
 	width:350px;
 
@@ -126,6 +127,67 @@ body{
 	text-align: center;
 
 }
+
+
+.sort-holder{
+	width:95%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.sort-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	background: #ddd;
+	border-radius: 3px;
+	padding:3px;
+}
+
+.sort-container-label{
+	color: #333;
+	/*padding:4px;*/
+	font-size: 14px;
+	margin: 0px 9px 0px 5px;
+}
+
+.sortbtn{
+	border-radius: 3px;
+	padding:4px;
+	color: #444;
+	/*margin: 0px 3px 0px 3px;*/
+	font-size: 11px;
+	text-align: center;
+	width:55px;
+	cursor: pointer;
+}
+
+.sortbtn:hover{
+	background: #eee;
+}
+
+.activesortbtn{
+	color: #000;
+	background: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
